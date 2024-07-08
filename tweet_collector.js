@@ -11,6 +11,7 @@ function loop() {
         window.scrollBy(0,1000);
 	let element = document.getElementsByClassName("css-175oi2r r-18u37iz r-1udh08x r-1c4vpko r-1c7gwzm r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21");
         for(let index=0; index<element.length; index++) {
+	console.log(index)
             try {
 	        let reply = element[index].innerHTML.match(reply_regex);
 	        let like = element[index].innerHTML.match(like_regex);
@@ -22,7 +23,7 @@ function loop() {
 		    "retweet":`${retweet[1]}`,
 		    "views":`${views[1]}`,
 	        };
-		    console.log(dict)
+		console.log(dict)
            } 
            catch (error) {
 	       console.log(error)
