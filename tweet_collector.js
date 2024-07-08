@@ -15,7 +15,7 @@ function loop() {
 	        let like = element[index].innerHTML.match(like_regex);
 	        let retweet = element[index].innerHTML.match(retweet_regex);
 		let views = element[index].innerHTML.match(views_regex);
-	        dict[element[index]] = {
+	        dict[index] = {
 		    "like":`${like[1]}`,
 		    "reply":`${reply[1]}`,
 		    "retweet":`${retweet[1]}`,
