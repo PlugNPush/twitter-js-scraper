@@ -17,6 +17,7 @@ function loop() {
 	        let like = element[index].innerHTML.match(like_regex);
 	        let retweet = element[index].innerHTML.match(retweet_regex);
 		let views = element[index].innerHTML.match(views_regex);
+		let time = element[index].innerHTML.match(time_regex);
 	        dict[element[index].innerText.split("\n")[1].concat("-"+time[1])] = {
 		    "like":`${like[1]}`,
 		    "reply":`${reply[1]}`,
